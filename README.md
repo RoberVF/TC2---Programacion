@@ -1,11 +1,11 @@
-# Sistema de Gestión de Reservas para Gimnasio
+# Sistema de Gestion de Reservas para Gimnasio
 
-Este proyecto es una aplicación web para gestionar un gimnasio, permitiendo crear clientes, realizar reservas de clases y consultar todas las reservas existentes.
+Este proyecto es una aplicacion web para gestionar un gimnasio, permitiendo crear clientes, realizar reservas de clases y consultar todas las reservas existentes.
 
 ## Funcionalidades Principales
 
 1. **Crear Cliente**  
-   Permite registrar un nuevo cliente en el sistema. Cada cliente tendrá un nombre, correo electrónico y otros datos básicos.
+   Permite registrar un nuevo cliente en el sistema. Cada cliente tendra un nombre, correo electronico y otros datos basicos.
 
 2. **Realizar Reservas**  
    Los clientes registrados pueden reservar clases, especificando el tipo de clase y la fecha/hora deseada.
@@ -19,16 +19,16 @@ Este proyecto es una aplicación web para gestionar un gimnasio, permitiendo cre
 
 ### 1. HTML y JSP
 - **Crear Cliente:** Formulario para introducir los datos del cliente.  
-- **Realizar Reserva:** Página para seleccionar el cliente, el tipo de clase y la fecha/hora.  
+- **Realizar Reserva:** Pagina para seleccionar el cliente, el tipo de clase y la fecha/hora.  
 - **Consultar Reservas:** Tabla para mostrar todas las reservas almacenadas en el sistema.  
 
 ### 2. Servlets
 
 - **CrearClienteServlet.java:**  
-  Gestiona la creación de nuevos clientes en la base de datos.
+  Gestiona la creacion de nuevos clientes en la base de datos.
 
 - **ReservarServlet.java:**  
-  Permite realizar una nueva reserva, asociándola con un cliente existente.
+  Permite realizar una nueva reserva, asociandola con un cliente existente.
 
 - **ConsultarServlet.java:**  
   Consulta todas las reservas de la base de datos y las muestra en formato HTML.
@@ -38,20 +38,20 @@ Este proyecto es una aplicación web para gestionar un gimnasio, permitiendo cre
 Se utiliza **MySQL** como base de datos, con las siguientes tablas principales:
 
 - **`clientes`**
-  - `id_cliente` (INT, PK): Identificador único del cliente.
+  - `id_cliente` (INT, PK): Identificador unico del cliente.
   - `nombre` (VARCHAR): Nombre del cliente.
-  - `email` (VARCHAR): Correo electrónico del cliente.
-  - `telefono` (VARCHAR): Número de teléfono del cliente.
+  - `email` (VARCHAR): Correo electronico del cliente.
+  - `telefono` (VARCHAR): Numero de telefono del cliente.
 
 - **`reservas`**
-  - `id_reserva` (INT, PK): Identificador único de la reserva.
-  - `id_cliente` (INT, FK): Referencia al cliente que realizó la reserva.
+  - `id_reserva` (INT, PK): Identificador unico de la reserva.
+  - `id_cliente` (INT, FK): Referencia al cliente que realizo la reserva.
   - `fecha_clase` (DATETIME): Fecha y hora de la clase reservada.
   - `tipo_clase` (VARCHAR): Tipo de clase reservada.
 
 ---
 
-## Navegación en la Aplicación
+## Navegacion en la Aplicacion
 
 ### Enlaces principales:
 
@@ -61,11 +61,11 @@ Se utiliza **MySQL** como base de datos, con las siguientes tablas principales:
 
 2. **Reservar Clase**  
    URL: `/TrabajoCurso2_RobertoMoralesFumero/ReservarServlet`  
-   Página para realizar una nueva reserva.
+   Pagina para realizar una nueva reserva.
 
 3. **Consultar Reservas**  
    URL: `/TrabajoCurso2_RobertoMoralesFumero/ConsultarServlet`  
-   Tabla dinámica que muestra todas las reservas almacenadas.
+   Tabla dinamica que muestra todas las reservas almacenadas.
 
 ---
 
@@ -79,7 +79,7 @@ Se utiliza **MySQL** como base de datos, con las siguientes tablas principales:
 
 ---
 
-## Instalación y Configuración
+## Instalacion y Configuracion
 
 1. **Clonar el repositorio:**
    ```bash
